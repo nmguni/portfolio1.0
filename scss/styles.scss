@@ -1,0 +1,378 @@
+//   GLOBAL
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+
+//    variables
+
+$faded-marron: rgba(150, 1, 1, 0.7);
+
+//    NAVBAR
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 20px;
+  .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    opacity: 0.8;
+    margin-right: 20px;
+  }
+}
+
+//    HEADER
+
+.headerInfo {
+  margin-top: 15%;
+}
+header {
+  color: #000;
+  background-image: url("../img/christopher-gower-291246-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  img {
+    border: solid $faded-marron 20px;
+  }
+  .header-text {
+    text-transform: capitalize;
+    span {
+      background-color: $faded-marron;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      padding: 10px 30px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+    }
+  
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  ul {
+    font-size: 14px;
+    li{
+      a{
+        color:#000;
+        transition: 0.8s;
+        &:hover{
+          text-decoration: none;
+          color: $faded-marron;
+          transition: 0.8s;
+        }
+  
+      }
+    }
+  }
+  .header-icons {
+    li {
+      display: inline;
+      list-style: none;
+      text-decoration: none;
+      margin-right: 15px;
+      padding: 5px;
+    }
+
+    a {
+      color: #000;
+      transition: 0.8s;
+
+      padding: 5px;
+      &:hover {
+        color: #fff;
+        background: #000;
+        border-radius: 5px;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+//   ABOUT
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  h1 {
+    font-size: 32px;
+    opacity: 0.8;
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  li {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px;
+    border: $faded-marron solid 1px;
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+  a {
+    cursor: pointer;
+    color: #000;
+    background-color: $faded-marron;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    &:hover {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  img {
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+}
+
+//   PORTFOLIO
+
+#portfolio {
+  background-image: url("../img/christopher-gower-291246-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .card-columns {
+    margin-top: 10%;
+  }
+
+  .port-container {
+    margin: 0 50px 0 50px;
+  }
+
+  .card {
+    margin: 10px;
+    transition: 1s;
+    color: rgba(0, 0, 0, 0.6);
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+      -webkit-box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+      -moz-box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+    }
+    .fa-github:hover {
+      transition: 0.5s;
+      color: rgba(63, 63, 63, 0.8);
+    }
+  }
+
+  h1 {
+    margin-top: 4rem;
+    font-family: "Permanent Marker", cursive;
+    font-size: 3.5rem;
+  }
+  i {
+    margin-right: 5px;
+    color: $faded-marron;
+  }
+}
+
+.light-overlay-2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  background: rgba(255, 255, 255, 0.8);
+}
+
+//   skills
+
+#skills {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.6);
+  strong{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+li{
+    font-size: 14px;
+}
+  .skill-title {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  h1 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    
+  }
+  .skill-bg {
+    background: $faded-marron;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: 2em;
+
+   
+  }
+  .pro-bg {
+    padding: 10px;
+  }
+}
+
+#contact{
+  background-image: url("../img/Manchester-map-preview-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(63, 63, 63, 0.8);
+  
+  .card{
+    border-radius: 30px;
+    border: rgba(0, 0, 0, 0.1) solid 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+ 
+
+  h1 {
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  .contact-info {
+    transition: 0.5s;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 2em;
+ 
+ 
+    a {
+        color: maroon;
+        &:hover {
+          transition: 0.5s;
+          color: rgb(209, 209, 209);
+          text-decoration: none;
+        }
+      }
+      span{
+          color: maroon;
+      }
+
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+      -webkit-box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+      -moz-box-shadow: 0px 0px 13px 3px rgba(120, 0, 0, 0.38);
+      border-radius: 30px;
+      
+    }
+
+  }
+}
+.light-overlay-3 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// footer
+
+#main-footer {
+  ul {
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    li {
+      display: inline;
+      color: maroon;
+     
+    }
+  }
+}
+
+// meadia
+@media only screen and (max-width: 450px) {
+  header {
+    height: 760px;
+  }
+  .dark-overlay {
+    height: 760px;
+  }
+  .headerInfo {
+    padding-top: 20px;
+    img {
+      width: 280px;
+      height: 280px;
+      margin: 45px;
+    }
+  }
+}
+@media only screen and (max-width: 985px) {
+  #skills {
+    .pro-bg {
+      padding-top: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  #skills {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+    #contact {
+        .contact-info {
+         font-size:2rem ;
+     }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    #contact {
+        .contact-info {
+         font-size:1.5rem ;
+         letter-spacing: 3px;
+         line-height: 1.5em;
+     }
+    }
+  }
