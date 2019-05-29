@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "diploy": "gh-pages"
   },
   "repository": {
     "type": "git",
@@ -12,9 +12,13 @@
   },
   "author": "ndumiso mguni",
   "license": "MIT",
+  "homepage": "https://github.com/.github.io/myportfolio",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
