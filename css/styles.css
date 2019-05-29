@@ -87,11 +87,12 @@ header {
   align-items: center;
   justify-content: center;
   line-height: 2.5rem; }
+  .about strong{color:maroon;font-size:16px}
   .about h1 {
     font-size: 32px;
     opacity: 0.8; }
   .about p {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0.8; }
   .about li {
     display: inline;
@@ -123,7 +124,7 @@ header {
     border-radius: 10px; }
 
 #portfolio {
-  background-image: url("../img/christopher-gower-291246-unsplash.jpg");
+  background-image: url("../img/rayi-christian-wicaksono-366-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   #portfolio .card-columns {
@@ -244,6 +245,12 @@ header {
       width: 280px;
       height: 280px;
       margin: 45px; } }
+
+
+      @media only screen and (max-width: 750px) {
+        .about .about_img {
+          display: none;
+        }           }
 
 @media only screen and (max-width: 985px) {
   #skills .pro-bg {
